@@ -67,15 +67,8 @@ ll /var/www/html/repo
 
 ```
 
-You should see something like this
-
-![MetaStore remote database](https://github.com/gamboabdoulraoufou/hdp-2-Ambari-and-HDP-local-repository/blob/master/img/repo1.png)
-
-![MetaStore remote database](https://github.com/gamboabdoulraoufou/hdp-2-Ambari-and-HDP-local-repository/blob/master/img/repo2.png)
-
 > Go to go to http://IP/repo/ or http://hostname/repo
 
-You should see something like this
 
 > Set ambari repo
 ```sh
@@ -83,8 +76,8 @@ cat ambari.repo
 
 vi ambari.repo
 
-baseurl=http://velvet-repo.c.equipe-1314.internal/repo/AMBARI/centos7
-gpgkey=http://velvet-repo.c.equipe-1314.internal/repo/AMBARI/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+baseurl=http://velvet-repo.c.projet-ic-166005.internal/repo/AMBARI/centos7
+gpgkey=http://velvet-repo.c.projet-ic-166005.internal/repo/AMBARI/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 
 ```
 
@@ -94,11 +87,11 @@ cat hdp.repo
 
 vi hdp.repo
 
-baseurl=http://velvet-repo.c.equipe-1314.internal/repo/HDP/centos7/
-gpgkey=http://velvet-repo.c.equipe-1314.internal/repo/HDP/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+baseurl=http://velvet-repo.c.projet-ic-166005.internal/repo/HDP/centos7
+gpgkey=http://velvet-repo.c.projet-ic-166005.internal/repo/HDP/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 
-baseurl=http://velvet-repo.c.equipe-1314.internal/repo/HDP-UTILS/
-gpgkey=http://velvet-repo.c.equipe-1314.internal/repo/HDP-UTILS/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+baseurl=http://velvet-repo.c.projet-ic-166005.internal/repo/HDP-UTILS
+gpgkey=http://velvet-repo.c.projet-ic-166005.internal/repo/HDP-UTILS/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 
 ```
 
@@ -108,7 +101,7 @@ cat HDP-UTILS/hdp-util.repo
 
 vi HDP-UTILS/hdp-util.repo
 
-baseurl=http://velvet-repo.c.equipe-1314.internal/repo/HDP-UTILS/
+baseurl=http://velvet-repo.c.projet-ic-166005.internal/repo/HDP-UTILS
 
 
 ```
