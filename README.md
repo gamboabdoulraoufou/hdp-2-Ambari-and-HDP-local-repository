@@ -1,5 +1,7 @@
 ### hdp-2-Ambari-and-HDP-local-repository
 
+Run all command on repo host.
+
 > Setting Up a Local Repository
 
 ```sh
@@ -23,9 +25,6 @@ systemctl enable httpd
 systemctl start httpd
 systemctl enable httpd
 systemctl status httpd
-
-# change permission
-/usr/share/doc/httpd-2.4.6/httpd-vhosts.conf
 
 # create a directory for your web server
 mkdir -p /var/www/html/
@@ -68,6 +67,11 @@ ll /var/www/html/repo
 
 ```
 
+You should see something like this
+
+![MetaStore remote database](https://github.com/gamboabdoulraoufou/hdp-2-Ambari-and-HDP-local-repository/blob/master/img/repo1.png)
+
+![MetaStore remote database](https://github.com/gamboabdoulraoufou/hdp-2-Ambari-and-HDP-local-repository/blob/master/img/repo2.png)
 
 > Go to go to http://IP/repo/ or http://hostname/repo
 
