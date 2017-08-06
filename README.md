@@ -79,8 +79,8 @@ cat ambari.repo
 
 vi ambari.repo
 
-baseurl=http://velvet-repos.c.equipe-1314.internal/repo/AMBARI/centos7
-gpgkey=http://velvet-repos.c.equipe-1314.internal/repo/AMBARI/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+baseurl=http://velvet-repo.c.equipe-1314.internal/repo/AMBARI/centos7
+gpgkey=http://velvet-repo.c.equipe-1314.internal/repo/AMBARI/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 
 ```
 
@@ -90,20 +90,30 @@ cat hdp.repo
 
 vi hdp.repo
 
-baseurl=http://velvet-repos.c.equipe-1314.internal/repo/HDP/centos7/
-gpgkey=http://velvet-repos.c.equipe-1314.internal/repo/HDP/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+baseurl=http://velvet-repo.c.equipe-1314.internal/repo/HDP/centos7/
+gpgkey=http://velvet-repo.c.equipe-1314.internal/repo/HDP/centos7/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 
-baseurl=http://velvet-repos.c.equipe-1314.internal/repo/HDP-UTILS/
-gpgkey=http://velvet-repos.c.equipe-1314.internal/repo/HDP-UTILS/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+baseurl=http://velvet-repo.c.equipe-1314.internal/repo/HDP-UTILS/
+gpgkey=http://velvet-repo.c.equipe-1314.internal/repo/HDP-UTILS/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+
+```
+
+> Set hdp-util repo
+```sh
+cat HDP-UTILS/hdp-util.repo
+
+vi HDP-UTILS/hdp-util.repo
+
+baseurl=http://velvet-repo.c.equipe-1314.internal/repo/HDP-UTILS/
+
 
 ```
 
 > copy repo file 
 ```sh
-cp ambari.repo ambari.repo.bpk
-cp hdp.repo hdp.repo.bpk
 
 cp ambari.repo /var/www/html/repo/AMBARI/centos7/
 cp hdp.repo /var/www/html/repo/HDP/centos7/
+cp HDP-UTILS/hdp-util.repo /var/www/html/repo/HDP-UTILS/
 
 ```
