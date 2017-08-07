@@ -70,6 +70,18 @@ ll /var/www/html/repo
 > Go to go to http://IP/repo/ or http://hostname/repo
 
 
+> Set amabri repo by changing the parameters bellow
+```sh
+cat ambari.repo
+
+vi ambari.repo
+
+baseurl=http://velvet-repo.c.projet-ic-166005.internal/repo/AMBARI/centos7/2.4.0.1-1
+gpgkey=http://velvet-repo.c.projet-ic-166005.internal/repo/AMBARI/centos7/2.4.0.1-1/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
+
+```
+
+
 > Set hdp repo by changing the parameters bellow
 ```sh
 cat hdp.repo
@@ -97,7 +109,7 @@ baseurl=http://velvet-repo.c.projet-ic-166005.internal/repo/HDP-UTILS
 
 > copy repo file 
 ```sh
-
+cp ambari.repo /var/www/html/repo/AMBARI/centos7/2.4.0.1-1/
 cp hdp.repo /var/www/html/repo/HDP/centos7/
 cp HDP-UTILS/hdp-util.repo /var/www/html/repo/HDP-UTILS/
 
